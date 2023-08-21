@@ -10,14 +10,12 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class MessageForm implements Serializable {
-    @Getter
-    @Setter
+@Getter
+@Setter
+public class MessageForm {
     @NotBlank
     private String name;
 
-    @Getter
-    @Setter
     @NotNull
     @Min(0)
     private BigDecimal amount;
